@@ -5,12 +5,12 @@
 #' @import htmlwidgets
 #'
 #' @export
-widgetwrapper <- function(message, width = NULL, height = NULL, elementId = NULL) {
+widgetwrapper <- function(message, selections = 1:3, width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(
     message = message,
-    selections = 1:3
+    selections = selections
   )
 
   # create widget
